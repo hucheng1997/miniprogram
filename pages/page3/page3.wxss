@@ -1,0 +1,38 @@
+.page3_container{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #BEBEBE;
+}
+.poster{
+  width: 128rpx;
+  height: 128rpx;
+}
+.title_date_name{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  width: 70%;
+}
+.title{
+  color: #000;
+  font-size: 32rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.date{
+  color: #666;
+  font-size: 28rpx;
+  margin: 8rpx 0;
+}
+.name{
+  color: #333;
+  font-size: 28rpx;
+}
+
+.score{
+ color: red;
+ font-weight: bold;
+ font-size: 40rpx;
+}

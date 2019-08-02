@@ -1,0 +1,15 @@
+<navigator url="/pages/movie_detail/movieDetail?index={{index}}"  wx:for="{{movies}}" wx:key='{{index}}'>
+<view class="page3_container">
+  <image class="poster" src="{{item.images.small}}"></image>
+  <view class="title_date_name">
+    <text class="title">{{item.title}}</text>
+    <text class="date">年份：{{item.year}}</text>
+    <text class="name">导演：{{item.directors[0].name}}</text>
+  </view>
+  <text class="score">{{item.rating.average}}</text>
+</view>
+</navigator>
+
+
+
+

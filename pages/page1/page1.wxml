@@ -1,0 +1,7 @@
+<view class="indexContainer">
+  <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+  <text class="welcome">你好， {{userInfo.nickName}}，欢迎来到我的博客</text>
+  <view class="goAhead">
+    <text bindtap="entryMyBlog">进入我的博客</text>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<template name="page2Tmp">
+  <view class="tmpContainer">
+    <view class="avatar_date">
+      <image src="{{avatar}}"></image>
+      <text>{{date}}</text>
+    </view>
+    <text class="title">{{title}}</text>
+    <image class="contentImg" src="{{detail_img}}"></image>
+    <text class="content" >{{detail_content}}</text>
+    <view class="collection_love">
+      <image src="{{detail_love_image1}}"></image>
+      <text>{{love_count}}</text>
+      <image src="{{detail_love_image2}}"></image>
+      <text>{{attention_count}}</text>
+    </view>
+  </view>
+</template>

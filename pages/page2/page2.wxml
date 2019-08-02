@@ -1,0 +1,24 @@
+<import src='/pages/template/page2-template.wxml'/>
+<view>
+  <swiper catchtap="carouselToDetail"  indicator-dots="true" indicator-color="#CEFFCE" indicator-active-color="#00DB00" autoplay="true" interval="3000">
+    <swiper-item>
+      <image data-carousel-hi='1' src="/image/detail/carousel/01.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-carousel-hi='0' src="/image/detail/carousel/02.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-carousel-hi='2' src="/image/detail/carousel/03.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-carousel-hi='3' src="/image/detail/carousel/04.jpg"></image>
+    </swiper-item>
+  </swiper>
+  
+<block wx:for="{{listArr}}" wx:key='{{index}}' >
+  <view catchtap="toDetail" data-hi='{{index}}'>
+    <template is='page2Tmp'  data="{{...item}}" ></template>
+  </view>
+</block>
+
+</view>

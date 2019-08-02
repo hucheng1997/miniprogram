@@ -1,0 +1,10 @@
+<view class="movieDetail_container">
+  <image class='movieDetail_img' src="{{movieDetail.images.large}}"></image>
+  <text class="title">{{movieDetail.title}}</text>
+  <view class="rate_director_actor">
+    <text class="rate">评分：{{movieDetail.rating.average}}</text>
+    <text class="director">导演：{{movieDetail.directors[0].name}}</text>
+    <text class="actor">主演：{{movieDetail.casts[0].name}} {{movieDetail.casts[1].name}} {{movieDetail.casts[2].name}}</text>
+  </view>
+  <button type="primary">我要观影</button>
+</view>
